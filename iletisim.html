@@ -1,0 +1,135 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(109, 199, 199);
+    background-size: auto;
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 30vh;
+    min-height: 30vh;
+}
+.circle-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: violet;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 80px;
+    transition: 0.8s;
+}
+a{
+    text-decoration: none;
+}
+.circle-div:hover{
+    background-color: transparent;
+    color: violet;
+    border: 1px solid violet;
+}
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(22,112,214,0.4);
+}
+.navbar .Logo {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.navbar .Logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+.navbar ul{
+    float: right; 
+    margin-right: 20px ; 
+ }
+ 
+ .navbar ul li{
+     list-style: none;
+     display: inline-block;
+     margin: 0 8px;
+     line-height: 80px;
+ }
+ 
+ .navbar ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     padding: 6px 13px;
+     font-family: Roboto;
+     transition: .5s;
+ }
+ 
+ .navbar ul li a.active,
+ .navbar ul li a:hover{
+     background: #ff6e00;
+     border-radius: 2px;
+ } 
+    </style>
+    <title>iletisim</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="Logo">
+                <a href="">iletisim</a>
+            </div>
+            <ul>
+                <li><a href="hakkimizda.html">Hakkimizda</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="main-div">
+           <a href="https://www.youtube.com/watch?v=q6Og0s1sgE8">
+            <div class="circle-div">
+               <i class="fa-brands fa-youtube"></i>
+            </div>
+           </a>
+           
+           <a href="https://www.facebook.com/isikmobilyatr/">
+            <div class="circle-div">
+               <i class="fa-brands fa-facebook"></i>
+            </div>
+           </a>
+
+           <a href="https://www.instagram.com/isikmobilyatr/?hl=en">
+            <div class="circle-div">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+           </a>
+
+           <a>
+            <div class="circle-div">
+                <i class="fa-solid fa-circle-location-arrow"></i>
+            </div>
+           </a>
+        </div>
+    </div>
+</body>
+</html>
